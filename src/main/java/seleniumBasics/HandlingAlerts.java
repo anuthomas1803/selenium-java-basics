@@ -26,7 +26,7 @@ public void simpleAlert()
 	driver.switchTo().alert().accept();
 }
 
-public void confirmationAlert() // not working
+public void confirmationAlert() 
 {
 	WebElement confirmationButton=driver.findElement(By.xpath("//div[@class=\"card-body\"]//preceding::button[contains(text(),'Click for Prompt Box')]"));
 	confirmationButton.click();
